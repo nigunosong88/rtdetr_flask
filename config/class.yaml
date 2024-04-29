@@ -1,0 +1,10 @@
+
+# # 設定圖檔路徑
+# path: ../datasets/eggs  # 資料根目錄
+train: C:\Users\USER\Desktop\LAO\Image_Recognition\flask\dataset\images\train   # 訓練用資料集（相對於 path）
+val: C:\Users\USER\Desktop\LAO\Image_Recognition\flask\dataset\images\val      # 驗證用資料集（相對於 path）
+# test:                   # 測試用資料集（相對於 path，可省略）
+
+# 物件類別設定
+nc: 1        # 類別數量
+names: ['hello']  # 類別名稱

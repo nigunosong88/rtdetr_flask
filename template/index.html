@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href=
+            "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/
+                bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">RT-DETR</h3>
+        </div>
+        <hr/>
+        <div>
+            <form action="upload" method="post" 
+            enctype="multipart/form-data">
+                <input type="file" multiple="" name="file[]" class="span3" style="width:100px;height:30px;">
+                <br/>
+                <input type="submit" value="Upload" class="span2" style="width:100px;height:30px;">
+            </form>
+
+            <form action="{{ url_for('clear_file') }}" method="post">
+                <input type="submit" value="清空資料夾" style="width:100px;height:30px;">
+            </form>      
+            
+            <form action="{{ url_for('dataset') }}" method="post">
+                <input type="submit" value="分資料集" style="width:100px;height:30px;">
+            </form>       
+
+            <form action="{{ url_for('train_html') }}" method="post">
+                <input type="submit" value="訓練" style="width:100px;height:30px;">
+            </form>
+            <form action="{{ url_for('show_detr') }}" method="post">
+                <input type="submit" value="顯示預測DETR" style="width:100px;height:30px;">
+            </form>
+            <form action="{{ url_for('show_yolo') }}" method="post">
+                <input type="submit" value="顯示預測YOLO" style="width:100px;height:30px;">
+            </form>          
+
+        </div>
+    </div>
+</body>
+</html>

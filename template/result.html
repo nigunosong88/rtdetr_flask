@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href=
+               "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/
+                bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">Uploaded files</h3>
+        </div>
+        <hr/>
+        <div>
+            This is a list of the files you just uploaded, click on 
+            them to load/download them
+            <ul>
+                {% for file in filenames %}
+                <li>
+                    <a href="{{url_for('uploaded_file', 
+                     filename=file)}}">{{file}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <form action="{{ url_for('index') }}" method="post">
+        <button type="submit">點擊跳轉</button>
+    </form>
+</body>
+</html>

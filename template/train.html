@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <form action="{{ url_for('train') }}" method="post">
+        <div class="form-group">
+            <label for="epochs">epochs:</label>
+            <input id="epochs" class="form-control" type="number" name="epochs" placeholder="輸入數字"/>
+        </div>
+        <div class="form-group">
+            <label for="batch">batch:</label>
+            <input id="batch" class="form-control" type="number" name="batch" placeholder="輸入數字"/>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" name="submit_button" value="RT-DETR">
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" name="submit_button" value="YOLOv8">
+        </div>
+    </form>    
+
+    <form action="{{ url_for('home') }}" method="post">
+        <input type="submit" value="回首頁" style="width:100px;height:30px;">
+    </form>
+</body>
+</html>
