@@ -1,4 +1,4 @@
-# rtdetr_flask
+# rtdetr_Yolov8_flask
 # 主畫面
 ![image](https://github.com/nigunosong88/rtdetr_flask/blob/main/image/%E4%B8%BB%E7%95%AB%E9%9D%A2.jpg)
 # 輸入次數跟Epochs
